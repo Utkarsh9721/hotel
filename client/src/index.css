@@ -1,0 +1,28 @@
+/* App.css */
+:root {
+  --header-height: 80px;
+  --navbar-height: 60px;
+  --total-header: calc(var(--header-height) + var(--navbar-height));
+}
+
+.app {
+  position: relative;
+  min-height: 100vh;
+}
+
+.main-content {
+  margin-top: var(--total-header);
+  padding: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 70px;
+    --navbar-height: 50px;
+  }
+  
+  .main-content {
+    padding: 1rem;
+  }
+}
