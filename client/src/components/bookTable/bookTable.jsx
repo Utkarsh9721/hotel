@@ -42,7 +42,7 @@ const handleSubmit = async (e) => {
   setIsSubmitting(true);
   
   try {
-    const response = await fetch('http://localhost:5000/api/bookings', {
+    const response = await fetch('https://hotel-1-dwls.onrender.com/api/bookings', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
